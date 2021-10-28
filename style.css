@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: white;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+.container{
+  max-width: 1130px;
+
+}
+
+.header{
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1245px;
+  padding-top: 28px;
+  margin: 0 3.5rem;
+}
+
+.header a{
+  display: inline-block;
+  background: #e50914;
+  color: white;
+  text-decoration: none;
+  align-self: flex-start;
+  font-size: 16px;
+  font-family: sans-serif;
+  padding: 7px 17px;
+  border-radius: 3px;
+  font-weight: 400;
+}
+
+.header a:hover{
+  background: #f40612;
+}
+
+.header img{
+  width: 134px;
+}
+
+.main {
+  height: 785px;
+  background: url(img/backgroud.jpg) center/cover no-repeat ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.main h1{
+  font-size: 3.125rem;
+  max-width: 674px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.main h2{
+  font-size: 26px;
+  margin: 16px 155px;
+  margin: 1rem auto;
+  font-weight: 400;
+}
+.main p{
+  font-size: 19px;
+  padding-bottom: 20px;
+  margin-top: 13px;
+}
+
+.main-child{
+  z-index: 1;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+}
+
+.gradient{
+  background: rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.form-cta {
+display: grid;
+grid-template-columns: 420px 200px;
+border-radius: 2px;
+}
+
+.form-cta input{
+  padding:18px 10px;
+  font-size: 18px;
+  font-family: sans-serif;
+  border: none;
+
+}
+
+.form-cta button{
+  font-size: 26px;
+  font-family: sans-serif;
+  min-height: 40px;
+  color: white;
+  background-color: #e50914;
+  border: none;
+  cursor: pointer;
+}
+.form-cta button:hover{
+  background: #f40612;
+}
+.form-cta button, input{
+  border-radius: 1.5px;
+}
+.form-cta button::after{
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 19px;
+  background:url(img/seta.svg);
+  margin-left: 20px;
+}
+
+.section{
+  background: black;
+  padding: 45px 75px;
+  border-top: 8px solid #222;
+  
+}
+
+.section h1{
+  font-size: 50px;
+  margin-bottom: 16px;
+}
+.section p{
+  font-size: 26px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+}
+
+.img-tv{
+  position: relative;
+  display: flex;
+}
+.img-tv img{
+width: 509px;
+}
+.video-tv{
+  position: absolute;
+  width: 400px;
+  top: 91px;
+  left: 70px;
+}
+
+.video-tv-2{
+  position: absolute;
+  width: 348px;
+  top: 40px;
+  left: 90px;
+}
+
+.downloads .grid > div:first-child{
+  order: 2;
+}
+
+.downloads .img-tv{
+  order: 1;
+}
+
+.downloads .img-tv .out-card{
+  display: flex;
+  background:black;
+  position: absolute;
+  height: 65px;
+  left: 15.5%;
+  bottom: 36px;
+  border: 3px solid #222;
+  border-radius: 0.75rem;
+  padding: 0.5em 0.75em;
+  align-items: center;
+}
+
+.downloads .img-tv .out-card .card-img{
+ width: 50px;
+ margin: 0 1em 0 0;
+}
+
+.downloads .img-tv .out-card .card-text .text-1 p{
+  font-size: 1rem;
+}
+
+.downloads .img-tv .out-card .card-text .text-2 p{
+  font-size: .9rem;
+  color: rgb(0, 75, 235);
+}
+
+.downloads .img-tv .out-card .card-download img{
+  width: 3rem;
+}
+
+.kids .grid > div:first-child{
+  order: 2;
+}
+
+.kids .img-tv{
+  order: 1;
+}
+
+.footer .form-cta{
+  margin-top: 0;
+}
+
+.footer{
+  padding-top: 4rem;
+  border-top: 8px solid #222;
+  background: black;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+}
+
+.footer a{
+  text-decoration: none;
+  font-family: sans-serif;
+  color: white;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.footer p{
+  padding-top: 4rem;
+}
+
+
